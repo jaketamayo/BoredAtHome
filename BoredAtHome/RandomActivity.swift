@@ -8,5 +8,6 @@
 import Foundation
 
 struct RandomActivity {
-  var addRandomActivity: String
+  var addRandomActivityName: String
+  var activityCategory: String
 }

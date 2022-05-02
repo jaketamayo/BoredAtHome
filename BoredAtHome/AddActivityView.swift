@@ -9,13 +9,20 @@ import SwiftUI
 
 struct AddActivityView: View {
   @State private var name = ""
-    var body: some View {
-        Form {
-          Section(header: Text("Add Activity")) {
-            TextField("Add Activity", text: $name)
-          }
+  var body: some View {
+    NavigationView {
+      Form {
+        Section(header: Text("Add Activity")) {
+          TextField("Add Activity", text: $name)
         }
+      }
+      .toolbar {
+        Button("Save") {
+         //Add activity to list
+        }
+      }
     }
+  }
 }
 
 struct AddActivityView_Previews: PreviewProvider {
