@@ -12,10 +12,11 @@ struct AddActivityView: View {
   var body: some View {
     NavigationView {
       Form {
-        Section(header: Text("Add Activity")) {
+        Section {
           TextField("Add Activity", text: $name)
         }
       }
+      .navigationTitle("Activities")
       .toolbar {
         Button("Save") {
          //Add activity to list

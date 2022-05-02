@@ -9,7 +9,8 @@ import SwiftUI
 
 //Bored at home is a simple app that gives you something at random to do at home
 //Click the random button to cycle through activities to do at home
-//Click the add button to add your own 
+//Click the add button to add your own things to do
+//After adding, random button will update with the new items
 
 struct ContentView: View {
   @State private var acvitivtyName = ""
@@ -25,8 +26,9 @@ struct ContentView: View {
           Button {
             addView.toggle()
           } label: {
-            Image(systemName: "plus")
+            Image(systemName: "plus.circle.fill")
               .font(.title)
+            //Want to make the button larger but dont know how
           }
           .sheet(isPresented: $addView) {
             AddActivityView()

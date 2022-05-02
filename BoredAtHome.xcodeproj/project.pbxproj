@@ -13,6 +13,7 @@
 		CF26DD2A281DF069006B11D1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF26DD29281DF069006B11D1 /* Preview Assets.xcassets */; };
 		CFE2A79728208AAA00083DF9 /* RandomActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE2A79628208AAA00083DF9 /* RandomActivity.swift */; };
 		CFE2A79928208F5E00083DF9 /* AddActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE2A79828208F5E00083DF9 /* AddActivityView.swift */; };
+		CFE2A79B282099C500083DF9 /* ActivitiesClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE2A79A282099C500083DF9 /* ActivitiesClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		CF26DD29281DF069006B11D1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CFE2A79628208AAA00083DF9 /* RandomActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomActivity.swift; sourceTree = "<group>"; };
 		CFE2A79828208F5E00083DF9 /* AddActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddActivityView.swift; sourceTree = "<group>"; };
+		CFE2A79A282099C500083DF9 /* ActivitiesClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 				CF26DD22281DF067006B11D1 /* BoredAtHomeApp.swift */,
 				CF26DD24281DF067006B11D1 /* ContentView.swift */,
 				CFE2A79828208F5E00083DF9 /* AddActivityView.swift */,
+				CFE2A79A282099C500083DF9 /* ActivitiesClass.swift */,
 				CFE2A79628208AAA00083DF9 /* RandomActivity.swift */,
 				CF26DD26281DF069006B11D1 /* Assets.xcassets */,
 				CF26DD28281DF069006B11D1 /* Preview Content */,
@@ -145,6 +148,7 @@
 			files = (
 				CF26DD25281DF067006B11D1 /* ContentView.swift in Sources */,
 				CFE2A79928208F5E00083DF9 /* AddActivityView.swift in Sources */,
+				CFE2A79B282099C500083DF9 /* ActivitiesClass.swift in Sources */,
 				CFE2A79728208AAA00083DF9 /* RandomActivity.swift in Sources */,
 				CF26DD23281DF067006B11D1 /* BoredAtHomeApp.swift in Sources */,
 			);
