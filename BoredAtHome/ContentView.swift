@@ -13,15 +13,27 @@ import SwiftUI
 //After adding, random button will update with the new items
 
 struct ContentView: View {
+  @StateObject private var activityStore = ActivitiesClass()
   @State private var acvitivtyName = ""
   @State private var addView = false
+  @State private var randomActivity: RandomActivity?
+  
+
+  
     var body: some View {
       NavigationView {
         VStack {
           Spacer()
-          Text("Random Activity")
-            .padding()
-            .font(.title)
+          Button {
+            //Randomly cycles through added activities
+            randomActivity = activityStore.random()
+          } label: {
+            if let randomActivity = randomActivity {
+              Text(randomActivity.addRandomActivityName)
+            } else {
+              Text("Activity")
+            }
+          } .font(.title)
           Spacer()
           Button {
             addView.toggle()
@@ -31,7 +43,7 @@ struct ContentView: View {
             //Want to make the button larger but dont know how
           }
           .sheet(isPresented: $addView) {
-            AddActivityView()
+            AddActivityView(activitiesStore: activityStore)
           }
           Spacer()
         }
